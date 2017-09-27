@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  tomcat_xld:
+    image: localhost:8123/tomcat-ubuntu16.04:1.0-SNAPSHOT
+    container_name: tomcat_xld
+    ports:
+      - "2222:22"
+      - "8080:8080"
+      - "8009:8009"
+    privileged: true
